@@ -31,10 +31,13 @@ Try to use both the let and const keywords
 //your code here
 let var1 = "Hello World"; // This is a string
 console.log(typeof var1); // Consoles it for verification
+
 let var2 = 123; // This is a number
 console.log(typeof var2); // Consoles it for verification
+
 let var3 = true; // This is a boolean
 console.log(typeof var3); // Consoles it for verification
+
 let var4 = [var1, var2, var3]; // This is an array
 console.log(typeof var4); // Consoles it for verification
 
@@ -46,6 +49,43 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+
+console.log(`var2 = ${var2}`);
+const operator1 = var2 + var2;
+console.log(`operator1 = ${operator1}`);
+
+const operator2 = var2 - var2;
+console.log(`operator2 = ${operator2}`);
+
+const operator3 = var2 / var2;
+console.log(`operator3 = ${operator3}`);
+
+const operator4 = var2 * var2;
+console.log(`operator4 = ${operator4}`);
+
+const operator5 = var2++; // increment next time variable, var2, is used, varible5 is not incremented such as 123 + 1
+console.log(`operator5 = ${operator5}`); // previously number is consoled here
+console.log(var2);
+
+const operator6 = ++var2; // both is incremented
+console.log(`operator6 = ${operator6}`);
+console.log(var2);
+
+const operator7 = var2--; // increment next time variable, var2, is used, varible5 is not incremented such as 123 - 1
+console.log(`operator7 = ${operator7}`); // previously number is consoled here
+console.log(var2);
+
+const operator8 = --var2; // both is incremented
+console.log(`operator8 = ${operator8}`);
+console.log(var2);
+
+let operator9 = var2;
+operator9 += operator9;
+console.log(`operator9 = ${operator9}`);
+
+let operator10 = var2;
+operator10 -= operator10;
+console.log(`operator10 = ${operator10}`);
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -65,13 +105,20 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
+let userName = "Lars";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
 //your code here
+if (userName.length && userAge <= 18 && !userIsBlocked) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log("user confirmed.");
+} else {
+  console.log("user not confirmed.");
+}
 
 /******************************************************************************
 ASSIGNMENT 5
@@ -86,6 +133,9 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 ******************************************************************************/
 
-const userMale = false;
+const userMale = true;
 
 //your code here
+
+const userTitle = userMale ? "Mr." : "Mrs.";
+console.log(userTitle);
