@@ -17,7 +17,7 @@ using one of the methods I showed in the first lecture.
 <-- Locate the index.html file in the file browser and link it to this file, 
 javascript.js
 ******************************************************************************/
-
+//done in index.html
 /****************************************************************************** 
 ASSIGNMENT 2
 
@@ -29,6 +29,14 @@ Try to use both the let and const keywords
 ******************************************************************************/
 
 //your code here
+let var1 = "Hello World"; // This is a string
+console.log(typeof var1); // Consoles it for verification
+let var2 = 123; // This is a number
+console.log(typeof var2); // Consoles it for verification
+let var3 = true; // This is a boolean
+console.log(typeof var3); // Consoles it for verification
+let var4 = [var1, var2, var3]; // This is an array
+console.log(typeof var4); // Consoles it for verification
 
 /****************************************************************************** 
 ASSIGNMENT 3
